@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head lang="en-us">
+
+    <title>ducks</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+
+    <link href='http://fonts.googleapis.com/css?family=Bubblegum+Sans' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+
+  </head>
+  <body>
+
+    <img src="assets/icon.png" id="icon" alt="icon for image scrapers" />
+
+    <canvas id="canvas" width="1024" height="768"></canvas>
+
+    <div id="preloader">
+      <span class="outer">
+        <span class="inner">&nbsp;</span>
+      </span>
+    </div>
+
+    <div id="menu" class="modal">
+      <div class="inner">
+        <div class="wobble"><img src="assets/duck.png"/></div>
+        <h1 class="wobble2">Ducks!</h1>
+        <h3>
+          Guide the plane with the mouse and gather the duckies
+          as fast as you can!
+        </h3>
+        <div class="padded">
+          <button>Play!</button>
+        </div>
+        <p class="info">
+          Built using <a href="http://www.glge.org/">GLGE</a>
+          and <a href="https://github.com/statico/webgl-demos/tree/master/ducks">lots more...</a>
+        </p>
+      </div>
+    </div>
+
+    <div id="scorecard" class="modal">
+      <div class="inner">
+        <h3>Nice job! Your time:</h3>
+        <h1 class="wobble time"><!-- 15 seconds --></h1>
+        <h3>Your rank:</h3>
+        <h2 class="rank"><!-- Friendly Mallard --></h2>
+        <h3 class="byline"><!-- (That's pretty good) --></h3>
+        <div class="padded">
+          <button>Play again!</button>
+        </div>
+        <p class="info">
+          <!-- We'll populate this element from the p.info above. -->
+        </p>
+      </div>
+    </div>
+
+    <div id="debug"></div>
+
+    <script src="assets/js/glge-compiled.js"></script>
+    <script src="assets/js/jquery-1.7.1.min.js"></script>
+    <script src="assets/js/underscore-min.js"></script>
+    <script src="assets/js/backbone-min.js"></script>
+    <script src="assets/js/buzz.js"></script>
+
+    <script src="logic.js"></script>
+    <script src="view.js"></script>
+
+    <!-- See also scene.xml -->
+
+    
+
+  </body>
+</html>
